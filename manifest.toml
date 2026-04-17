@@ -53,7 +53,8 @@ ram.runtime = "50M"
     arm64.sha256 = "fbe29bd70047e4d05304d37f84451b79d45b9652686a0750243e31258744b96f"
 
     autoupdate.strategy = "latest_github_release"
-
+    autoupdate.asset.amd64 = "^plik-.*-linux-amd64$"
+    autoupdate.asset.arm64 = "plik-.*-linux-arm64$"
 
     [resources.system_user]
     
