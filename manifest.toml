@@ -55,18 +55,12 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    amd64.url = "https://github.com/root-gg/plik/releases/download/1.4.2/plik-1.4.2-linux-amd64"    
-    amd64.sha256 = "cc3a999183233ce9ebb166158cbf144073ddfe8d598a779f7b51088a3495e9dc"
-    arm64.url = "https://github.com/root-gg/plik/releases/download/1.4.2/plik-1.4.2-linux-arm64"    
-    arm64.sha256 = "fbe29bd70047e4d05304d37f84451b79d45b9652686a0750243e31258744b96f"
-
+    url = "https://github.com/root-gg/plik/releases/download/1.4.2/plik-server-1.4.2-linux-amd64.tar.gz"
+    sha256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     autoupdate.strategy = "latest_github_release"
-    autoupdate.asset.amd64 = "^plik-.*-linux-amd64$"
-    autoupdate.asset.arm64 = "plik-.*-linux-arm64$"
 
     in_subdir = false
-    rename = "plik"
-    
+   
     [resources.system_user]
     
     [resources.install_dir]

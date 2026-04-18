@@ -7,7 +7,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/plik --config __INSTALL_DIR__/plik.cfg
+ExecStart=__INSTALL_DIR__/server/./plikd --config __INSTALL_DIR__/plik.cfg
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
