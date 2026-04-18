@@ -56,8 +56,9 @@ ynh_systemctl --service="$app" --action="start"
 
 # Create the admin user
 
-plikd user create --login __ADMIN___ --password __PASSWORD__ --admin
-
+pushd "$install_dir"
+./plikd user create --login __ADMIN___ --password __PASSWORD__ --admin
+password
 
 #=================================================
 # END OF SCRIPT
