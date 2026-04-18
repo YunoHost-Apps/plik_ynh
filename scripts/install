@@ -31,7 +31,7 @@ ynh_script_progression "Adding $app's configuration files..."
 
 ynh_config_add --template="plik.cfg" --destination="$install_dir/plik.cfg"
 
-
+chmod -R 750 "$install_dir"
 
 #=================================================
 # SYSTEM CONFIGURATION
