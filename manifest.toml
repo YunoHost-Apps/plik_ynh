@@ -56,7 +56,7 @@ ram.runtime = "50M"
 
     [resources.sources.main]
     url = "https://github.com/root-gg/plik/releases/download/1.4.2/plik-server-1.4.2-linux-amd64.tar.gz"
-    sha256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    sha256 = "328cd739f198f5ca40e5010e61ed6f8a70d5a18d7418b8b543bab1710c92dc61"
     autoupdate.strategy = "latest_github_release"
 
     in_subdir = false
