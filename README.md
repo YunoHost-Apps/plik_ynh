@@ -20,7 +20,7 @@ Plik is a temporary file upload system (Wetransfer like) in Go.
 
 
 ## Screenshots
-![Screenshot of Plik](./doc/screenshots/example.jpg)
+![Screenshot of Plik](./doc/screenshots/plik.png)
 
 ## 📦 Developer info
 
