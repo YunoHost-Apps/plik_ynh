@@ -59,6 +59,7 @@ ram.runtime = "50M"
     sha256 = "328cd739f198f5ca40e5010e61ed6f8a70d5a18d7418b8b543bab1710c92dc61"
     autoupdate.strategy = "latest_github_release"
 
+    in_subdir = 1
     rename = "plik"
 
     [resources.system_user]
