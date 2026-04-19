@@ -29,7 +29,7 @@ ynh_setup_source --dest_dir="$install_dir"
 ynh_script_progression "Adding $app's configuration files..."
 
 
-ynh_config_add --template="plik.cfg" --destination="$install_dir/server/plikd.cfg"
+ynh_config_add --template="plikd.cfg" --destination="$install_dir/server/plikd.cfg"
 
 chmod -R 750 "$install_dir"
 
@@ -56,7 +56,7 @@ ynh_systemctl --service="$app" --action="start"
 
 # Create the admin user
 
-pushd "$install_dir"
+pushd "$install_dir/server"
 ./plikd user create --login __ADMIN___ --password __PASSWORD__ --admin
 password
 
