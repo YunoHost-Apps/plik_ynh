@@ -29,7 +29,7 @@ ynh_setup_source --dest_dir="$install_dir"
 ynh_script_progression "Adding $app's configuration files..."
 
 
-ynh_config_add --template="plik.cfg" --destination="$install_dir/plik.cfg"
+ynh_config_add --template="plik.cfg" --destination="$install_dir/server/plikd.cfg"
 
 chmod -R 750 "$install_dir"
 
