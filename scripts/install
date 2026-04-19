@@ -58,7 +58,6 @@ ynh_systemctl --service="$app" --action="start"
 
 pushd "$install_dir/server"
 ./plikd user create --login __ADMIN__ --password __PASSWORD__ --admin
-password
 
 #=================================================
 # END OF SCRIPT
