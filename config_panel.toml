@@ -5,9 +5,10 @@ name.en = "Configuration panel"
 name.fr = "Panneau de configuration"
 services = ["__APP__"]
 
-[main.auth_mode]
-    type = "select"
-    ask.en = "Authentication feature ?"
-    ask.fr = "Mode d'authentification?"
-    choices = ["disabled", "forced", "default"]
-    bind = ":__INSTALL_DIR__/server/plikd.cfg"
+    [main.main]
+        [main.main.auth_mode]
+        type = "select"
+        ask.en = "Authentication feature ?"
+        ask.fr = "Mode d'authentification?"
+        choices = ["disabled", "forced", "default"]
+        bind = ":__INSTALL_DIR__/server/plikd.cfg"
