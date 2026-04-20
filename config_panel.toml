@@ -5,12 +5,7 @@ name.en = "Configuration panel"
 name.fr = "Panneau de configuration"
 services = ["__APP__"]
 
-
-[main.instance]
-name.en = "Global settings"
-name.fr = "Paramètres Globaux"
-
-[main.instance.auth_mode]
+[main.auth_mode]
     type = "select"
     ask.en = "Authentication feature ?"
     ask.fr = "Mode d'authentification?"
