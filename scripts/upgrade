@@ -17,8 +17,6 @@ ynh_systemctl --service="$app" --action="stop"
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 
-ynh_app_setting_set_default --key=auth_mode --value=$auth_mode
-
 ynh_script_progression "Upgrading source files..."
 
 ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="server/plikd.cfg"
