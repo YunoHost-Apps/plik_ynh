@@ -45,11 +45,13 @@ ram.runtime = "50M"
 
     [install.admin]
     type = "string"
+    ask.en = "Admin name"
+    ask.fr = "Nom pour l'administrateur"
     help.en = "Choose the admin name for this app (min. 4 characters)"
     help.fr = "Choisissez un nom pour l'administrateur de cette application (min. 4 caractères)"
 
     [install.password]
-    help.en = "Choose the admin passwword for this app"
+    help.en = "Choose the admin password for this app"
     help.fr = "Choisissez un mot de passe pour l'administrateur de cette application"
     type = "password"
 
