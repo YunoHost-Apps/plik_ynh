@@ -10,5 +10,5 @@ services = ["__APP__"]
         type = "select"
         ask.en = "Authentication feature ?"
         ask.fr = "Mode d'authentification?"
-        choices = ["disabled", "forced", "default"]
-        bind = ":__INSTALL_DIR__/server/plikd.cfg"
+        choices = ["forced", "default"]
+        bind = "FeatureAuthentication:__INSTALL_DIR__/server/plikd.cfg"
