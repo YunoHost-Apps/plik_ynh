@@ -11,6 +11,8 @@ source /usr/share/yunohost/helpers
 #=================================================
 
 auth_mode=$auth_mode
+max_upload_size="50GB"
+ynh_app_setting_set --key=max_upload_size --value=$max_upload_size
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -19,7 +21,6 @@ ynh_script_progression "Setting up source files..."
 
 # Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir"
-
 
 #=================================================
 # APP INITIAL CONFIGURATION

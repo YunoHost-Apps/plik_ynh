@@ -5,10 +5,21 @@ name.en = "Configuration panel"
 name.fr = "Panneau de configuration"
 services = ["__APP__"]
 
-    [main.main]
-        [main.main.auth_mode]
-        type = "select"
-        ask.en = "Authentication feature ?"
-        ask.fr = "Mode d'authentification?"
-        choices = ["forced", "default"]
-        bind = "FeatureAuthentication:__INSTALL_DIR__/server/plikd.cfg"
+    [main.auth_mode]
+    type = "select"
+    ask.en = "Authentication feature ?"
+    ask.fr = "Mode d'authentification?"
+    choices = ["forced", "default"]
+    bind = "FeatureAuthentication:__INSTALL_DIR__/server/plikd.cfg"
+
+    [main.uploads]
+    name.en = "Upload limit size"
+    name.fr = "Téléchargement de fichiers"
+
+    [main.uploads.max_upload_size]
+    ask.fr = "Taille limite pour le téléchargement des fichiers"
+    ask.en = "Size limit file upload"
+    help.fr = "Par exemple 50GB, 500MB ou unlimited pour enlever toute limite "
+    help.en = "E.g 50GB, 500MB or unlimited for no limit"
+    type = "string"
+    bind = "FeatureAuthentication:__INSTALL_DIR__/server/plikd.cfg"
