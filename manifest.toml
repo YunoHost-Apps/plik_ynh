@@ -44,12 +44,24 @@ ram.runtime = "50M"
     default = "visitors"
 
     [install.admin]
-    type = "user"
+    type = "string"
+    help.en = "Choose the admin name for this app (min. 4 characters)"
+    help.fr = "Choisissez un nom pour l'administrateur de cette application (min. 4 caractères)"
 
     [install.password]
     help.en = "Choose the admin passwword for this app"
     help.fr = "Choisissez un mot de passe pour l'administrateur de cette application"
     type = "password"
+
+    [install.auth_mode]
+    ask.en = "Enable authentication to share files ?"
+    ask.fr = "Activer l'authentification pour le partage de fichiers ?"
+    type = "select"
+    choices = ["disabled", "forced", "default"]
+    default = "forced"
+    help.en = "disabled -> no authentication / forced -> no anonymous upload / default -> enabled"
+    help.fr = "disabled -> pas d'authentification / forced -> pas de téléchargement anonyme / default -> téléchargement anonyme et authentifié possible"
+    
 
 [resources]
     [resources.sources]
@@ -73,4 +85,11 @@ ram.runtime = "50M"
     [resources.permissions]
     main.url = "/"
 
+    [resources.apt]
+    packages = "postgresql libpq-dev"
+
     [resources.ports]
+
+    [resources.database]
+    type = "postgresql"
+	

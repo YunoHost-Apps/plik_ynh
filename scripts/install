@@ -54,11 +54,6 @@ ynh_script_progression "Starting $app's systemd service..."
 # Start a systemd service
 ynh_systemctl --service="$app" --action="start"
 
-# Create the admin user
-
-pushd "$install_dir/server"
-./plikd user create --login __ADMIN__ --password __PASSWORD__ --admin
-
 #=================================================
 # END OF SCRIPT
 #=================================================
