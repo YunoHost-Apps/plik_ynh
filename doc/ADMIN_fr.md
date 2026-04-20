@@ -1,5 +1,6 @@
 ## Utilisateur Admin
 DefaultAdminLogin    = `__ADMIN__`  
-Le mot de passe est celui choisi au moment de l'installation.
-## Le mode d'authetnification est `AUTH`.  
+DefaultAdminPassword    = `admin1234`
+:warning: Pour des raisons de sécurité, changer le mot de passe par défaut.
+## Le mode d'authentification est `__AUTH_MODE__`.  
 Il peut être modifié dans le panneau de configuration.
