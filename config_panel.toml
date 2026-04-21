@@ -13,6 +13,8 @@ services = ["__APP__"]
       type = "select"
       ask.en = "Authentication feature ?"
       ask.fr = "Mode d'authentification?"
+      help.en = "forced -> no anonymous upload / default -> anonymous and authenticated upload"
+      help.fr = "forced -> pas de téléchargement anonyme / default -> téléchargement anonyme et authentifié possible"
       choices = ["forced", "default"]
       bind = "FeatureAuthentication:__INSTALL_DIR__/server/plikd.cfg"
 
