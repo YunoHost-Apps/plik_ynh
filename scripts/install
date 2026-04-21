@@ -19,14 +19,12 @@ ynh_app_setting_set --key=max_upload_size --value=$max_upload_size
 #=================================================
 ynh_script_progression "Setting up source files..."
 
-# Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir"
 
 #=================================================
 # APP INITIAL CONFIGURATION
 #=================================================
 ynh_script_progression "Adding $app's configuration files..."
-
 
 ynh_config_add --template="plikd.cfg" --destination="$install_dir/server/plikd.cfg"
 
