@@ -30,6 +30,7 @@ ynh_config_change_url_nginx
 #=================================================
 
 ## do any changes to files that reference specific installation domain/path, i.e. regenerate configs etc
+ynh_write_var_in_file --file="$install_dir/server/plikd.cfg"  --key="Path" --value="$path"
 
 #=================================================
 # START SYSTEMD SERVICE
