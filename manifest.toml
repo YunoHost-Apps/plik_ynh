@@ -4,7 +4,7 @@ packaging_format = 2
 
 id = "plik"
 name = "Plik"
-description.en = "Plik is a temporary file upload system (Wetransfer like) in Go."
+description.en = "Temporary file upload system (Wetransfer like) in Go"
 description.fr = "Application de partage de fichiers temporaires écrite en Go"
 
 version = "1.4.2~ynh1"
