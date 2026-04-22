@@ -59,7 +59,6 @@ ram.runtime = "50M"
     help.en = "forced -> no anonymous upload / default -> anonymous and authenticated upload"
     help.fr = "forced -> pas de téléchargement anonyme / default -> téléchargement anonyme et authentifié possible"
     
-
 [resources]
     [resources.sources]
 
