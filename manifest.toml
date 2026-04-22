@@ -21,7 +21,7 @@ code = "https://github.com/root-gg/plik"
 [integration]
 yunohost = ">= 12.1.39"
 helpers_version = "2.1"
-architectures = ["amd64","arm64"]
+architectures = ["amd64","arm64", "arm"]
 multi_instance = true
 
 ldap = false
@@ -64,8 +64,21 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/root-gg/plik/releases/download/1.4.2/plik-server-1.4.2-linux-amd64.tar.gz"
-    sha256 = "328cd739f198f5ca40e5010e61ed6f8a70d5a18d7418b8b543bab1710c92dc61"
+    amd64.url = "https://github.com/root-gg/plik/releases/download/1.4.2/plik-server-1.4.2-linux-amd64.tar.gz"
+    amd64.sha256 = "328cd739f198f5ca40e5010e61ed6f8a70d5a18d7418b8b543bab1710c92dc61"
+
+    arm64.url = "https://github.com/root-gg/plik/releases/download/1.4.2/plik-server-1.4.2-linux-arm64.tar.gz"
+    arm64.sha256 = "3d34af4826de4d3d19c6b9591e0730e8a2e8f80bf65650fe29b780b9b0f4b787"
+
+    arm.url = "https://github.com/root-gg/plik/releases/download/1.4.2/plik-server-1.4.2-linux-arm.tar.gz"
+    arm.sha256 = "0feb9f53a93888481fd7e5a41a3fe9fbad25ded348a2a2c520f09892f853d72f"
+
+
+
+    autoupdate.asset.amd64 = "linux-amd64.tar.gz"
+    autoupdate.asset.arm64 = "linux-arm64.tar.gz"
+    autoupdate.asset.arm = "linux-arm.tar.gz"
+
     autoupdate.strategy = "latest_github_release"
 
     in_subdir = 1
