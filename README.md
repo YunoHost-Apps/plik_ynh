@@ -8,7 +8,7 @@ It shall NOT be edited by hand.
   Plik, packaged for YunoHost
 </h1>
 
-Plik is a temporary file upload system (Wetransfer like) in Go.
+Temporary file upload system (Wetransfer like)
 
 [![App Demo](https://img.shields.io/badge/App_Demo-blue?style=for-the-badge)](https://plik.root.gg)
 [![Version: 1.4.2~ynh1](https://img.shields.io/badge/Version-1.4.2~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/plik/)
