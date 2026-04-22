@@ -4,8 +4,8 @@ packaging_format = 2
 
 id = "plik"
 name = "Plik"
-description.en = "Temporary file upload system (Wetransfer like) in Go"
-description.fr = "Application de partage de fichiers temporaires écrite en Go"
+description.en = "Temporary file upload system (Wetransfer like)"
+description.fr = "Application de partage de fichiers temporaires"
 
 version = "1.4.2~ynh1"
 
@@ -59,7 +59,6 @@ ram.runtime = "50M"
     help.en = "forced -> no anonymous upload / default -> anonymous and authenticated upload"
     help.fr = "forced -> pas de téléchargement anonyme / default -> téléchargement anonyme et authentifié possible"
     
-
 [resources]
     [resources.sources]
 
@@ -73,9 +72,9 @@ ram.runtime = "50M"
     armhf.url = "https://github.com/root-gg/plik/releases/download/1.4.2/plik-server-1.4.2-linux-arm.tar.gz"
     armhf.sha256 = "0feb9f53a93888481fd7e5a41a3fe9fbad25ded348a2a2c520f09892f853d72f"
 
-    autoupdate.asset.amd64 = "linux-amd64.tar.gz"
-    autoupdate.asset.arm64 = "linux-arm64.tar.gz"
-    autoupdate.asset.armhf = "linux-arm.tar.gz"
+    autoupdate.asset.amd64 = "plik-server-.*-linux-amd64.tar.gz"
+    autoupdate.asset.arm64 = "plik-server-.*-linux-arm64.tar.gz"
+    autoupdate.asset.armhf = "plik-server-.*-linux-arm.tar.gz"
 
     autoupdate.strategy = "latest_github_release"
 
