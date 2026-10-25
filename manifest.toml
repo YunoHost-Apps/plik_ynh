@@ -7,7 +7,7 @@ name = "Plik"
 description.en = "Temporary file upload system (Wetransfer like)"
 description.fr = "Application de partage de fichiers temporaires"
 
-version = "1.4.2~ynh1"
+version = "1.4.3~ynh1"
 
 maintainers = ["otm33GH"]
 
@@ -63,14 +63,14 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    amd64.url = "https://github.com/root-gg/plik/releases/download/1.4.2/plik-server-1.4.2-linux-amd64.tar.gz"
-    amd64.sha256 = "328cd739f198f5ca40e5010e61ed6f8a70d5a18d7418b8b543bab1710c92dc61"
+    amd64.url = "https://github.com/root-gg/plik/releases/download/1.4.3/plik-server-1.4.3-linux-amd64.tar.gz"
+    amd64.sha256 = "eb40503e31aca0711fb85d0026aa1d225d9d32f432e7e777c769372581fca354"
 
-    arm64.url = "https://github.com/root-gg/plik/releases/download/1.4.2/plik-server-1.4.2-linux-arm64.tar.gz"
-    arm64.sha256 = "3d34af4826de4d3d19c6b9591e0730e8a2e8f80bf65650fe29b780b9b0f4b787"
+    arm64.url = "https://github.com/root-gg/plik/releases/download/1.4.3/plik-server-1.4.3-linux-arm64.tar.gz"
+    arm64.sha256 = "1e7bfe5a03a9a921b1a3af9b8c4f73f39f3405b59186ae96041715975e54f061"
 
-    armhf.url = "https://github.com/root-gg/plik/releases/download/1.4.2/plik-server-1.4.2-linux-arm.tar.gz"
-    armhf.sha256 = "0feb9f53a93888481fd7e5a41a3fe9fbad25ded348a2a2c520f09892f853d72f"
+    armhf.url = "https://github.com/root-gg/plik/releases/download/1.4.3/plik-server-1.4.3-linux-arm.tar.gz"
+    armhf.sha256 = "d6e69cf98ea318b055cecc9be26a1d50981cf684e1d2956477f779d3a7cf2aef"
 
     autoupdate.asset.amd64 = "plik-server-.*-linux-amd64.tar.gz"
     autoupdate.asset.arm64 = "plik-server-.*-linux-arm64.tar.gz"
